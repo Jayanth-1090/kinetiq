@@ -4,8 +4,9 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text style={styles.logo}>KINETIQ</Text>
+      <Text style={styles.tagline}>Your AI workout coach</Text>
+      <StatusBar style="light" />
     </View>
   );
 }
@@ -13,8 +14,20 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#0a0a0a',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  logo: {
+    fontSize: 48,
+    fontWeight: 'bold',
+    color: '#1A56DB',
+    letterSpacing: 6,
+  },
+  tagline: {
+    fontSize: 16,
+    color: '#6B7280',
+    marginTop: 8,
+    letterSpacing: 1,
   },
 });
